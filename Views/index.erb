@@ -13,5 +13,15 @@
         <li><a href= "/teams/<%= team %>"><%= team %></a></li>
       <% end %>
     </ul>
+
+    <h1>Position List</h1>
+
+    <ul>
+      <% positions.each do |position, name| %>
+      <li><a href= "/positions/<%= position %>"><%= position %></a></li>
+      <% end %>
+    </ul>
+
+
   </body>
 </html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Positions</title>
+    <link rel="stylesheet" href="./css/bootstrap-theme.css">
+  </head>
+
+  <body>
+    <h1>
+      <%= position%>
+    </h1>
+    <a href="/">Back!</a>
+
+    <h2>
+      <% positions[position].each do |name| %><br>
+        <%= name %>
+      <% end %>
+    </h2>
+
+
+  </body>
+</html>

@@ -9,13 +9,14 @@
     <h1>
       <%= team_name %>
     </h1>
+    <a href="/">Back!</a>
 
-    <p>
-      <% teams_info[team_name].each do |position, name| %>
-        <%= position %>: <%= name%> <br>
+    <h2>
+      <% teams_info[team_name].each do |test, name| %>
+        <h3><%= test %>: </h3> <%= name %> <br>
       <% end %>
-    </p>
+    </h2>
 
-    <a href="/teams">All teams</a>
+
   </body>
 </html>
