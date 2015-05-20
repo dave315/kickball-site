@@ -12,11 +12,12 @@
     <a href="/">Back!</a>
 
     <h2>
-      <% positions[position].each do |name| %><br>
-        <%= name %>
+      <% positions[position].each do |name, team| %>
+        <% name.each do |name, team| %>
+          <%= name %>: <%= team %> <br>
+        <% end %>
       <% end %>
     </h2>
-
 
   </body>
 </html>

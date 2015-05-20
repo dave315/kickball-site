@@ -18,11 +18,10 @@ end
 teams_info.each do |team, info|
   team_names << team
   info.each do |position, name|
-    positions[position] << name
+    positions[position] << { name => team }
   end
 end
 
-print teams_info
 print positions
 
 get "/" do
