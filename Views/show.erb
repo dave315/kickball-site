@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team Names</title>
+    <link rel="stylesheet" href="./css/bootstrap-theme.css">
+  </head>
+
+  <body>
+    <h1>
+      <%= team_name %>
+    </h1>
+
+    <p>
+      <% teams_info[team_name].each do |position, name| %>
+        <%= position %>: <%= name%> <br>
+      <% end %>
+    </p>
+
+    <a href="/teams">All teams</a>
+  </body>
+</html>
